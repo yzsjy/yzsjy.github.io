@@ -103,9 +103,8 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: 
-    github: git@github.com:yzsjy/yzsjy.github.io.git
-    branch: master
+  repository: https://github.com/yzsjy/yzsjy.github.io.git
+  branch: master
 
 search:
    path: search.xmk
