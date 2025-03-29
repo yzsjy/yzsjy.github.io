@@ -79,7 +79,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
+    <title>Hexo入门以及如何部署到Github</title>
     <url>/2023/05/23/hello-world/</url>
     <content><![CDATA[<h1 id="Hexo入门以及如何部署到Github"><a href="#Hexo入门以及如何部署到Github" class="headerlink" title="Hexo入门以及如何部署到Github"></a>Hexo入门以及如何部署到Github</h1><p>这篇文章主要介绍了如何在本地快速搭建Hexo框架下的博客以及如何将自己的博客部署到Github上。</p>
 <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>前提是本地已经安装了npm，然后最好在本地先新建一个文件夹，然后运行下面的命令安装Hexo</p>
@@ -121,7 +121,7 @@
       </tags>
   </entry>
   <entry>
-    <title>base_definition</title>
+    <title>C++概念</title>
     <url>/2025/03/29/base-definition/</url>
     <content><![CDATA[<h1 id="C-概念"><a href="#C-概念" class="headerlink" title="C++概念"></a>C++概念</h1><h2 id="C与C-的区别"><a href="#C与C-的区别" class="headerlink" title="C与C++的区别"></a>C与C++的区别</h2><ol>
 <li>C++是对C语言的扩充和延伸，并且对C语言提供后向兼容的能力。</li>
