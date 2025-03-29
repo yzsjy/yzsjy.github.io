@@ -152,6 +152,132 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yzsjy.github.io/2025/03/29/base-definition/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="yzsjy">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yzsjy">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/29/base-definition/" class="post-title-link" itemprop="url">base_definition</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-03-29 16:32:38 / Modified: 18:42:48" itemprop="dateCreated datePublished" datetime="2025-03-29T16:32:38+08:00">2025-03-29</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="C-概念"><a href="#C-概念" class="headerlink" title="C++概念"></a>C++概念</h1><h2 id="C与C-的区别"><a href="#C与C-的区别" class="headerlink" title="C与C++的区别"></a>C与C++的区别</h2><ol>
+<li>C++是对C语言的扩充和延伸，并且对C语言提供后向兼容的能力。</li>
+<li>C++由面向过程编程、面向对象编程、泛型编程、元编程、函数式编程、STL标准库组成。</li>
+<li>C++的出现是为了更方便地开发大型应用程序，面向对象编程里的很多重要思想和机制都对大型项目和复杂系统所要求的项目工程化、代码复用性&#x2F;扩展性&#x2F;可维护性等提供了强大的支撑。</li>
+</ol>
+<h2 id="C-与Java的区别"><a href="#C-与Java的区别" class="headerlink" title="C++与Java的区别"></a>C++与Java的区别</h2><ol>
+<li>Java的主要应用在应用层，C++主要在中间件和底层。</li>
+<li>Java取消了指针带来更高的代码质量；完全面向对象，独特的运行机制是其具有天然的可移植性。</li>
+<li>Java是运行在JVM上的。因为JVM是可以跨平台安装运行的，所以Java的可移植性强。</li>
+<li>C++在不同的系统上运行，需要不同的编码。</li>
+<li>垃圾回收机制的区别。C++用析构函数回收对象垃圾，java使用GC算法去回收对象垃圾。</li>
+</ol>
+<h2 id="C-与Python的区别"><a href="#C-与Python的区别" class="headerlink" title="C++与Python的区别"></a>C++与Python的区别</h2><ol>
+<li><p>C++是高级语言&#x2F;编译型语言，Python是脚本语言&#x2F;解释型语言。</p>
+<p>高级语言：可以使用解释、编译两种方式执行。</p>
+<p>脚本语言: 缩短了编译-链接-运行过程。在运行时解释执行。</p>
+<p>编译型语言：先将源代码编译成目标语言之后通过连接程序连接到生成的目标程序进行执行。</p>
+<p>解释型语言：根据输入数据当场执行，不生成目标程序。在终端打一条命令和语句，解释程序就立即将该语句解释成一条或多条几条指令提交给硬件立即执行。</p>
+</li>
+<li><p>C++和Python都是强类型语言。</p>
+<p>弱类型：能够直接进行隐式转换。</p>
+</li>
+</ol>
+<h2 id="C-的三大特性"><a href="#C-的三大特性" class="headerlink" title="C++的三大特性"></a>C++的三大特性</h2><h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>被继承的是父类（基类），继承出来的类是子类（派生类），子类拥有父类的所有的特性。<br>继承方式有公有继承、私有继承，保护继承。默认是私有继承。<br>C++语言允许单继承和多继承。<br>优点：继承减少了重复的代码、继承是多态的前提、继承增加了类的耦合性。<br>缺点：继承在编译时刻就定义了，无法在运行时刻改变父类继承的实现；父类通常至少定义了子类的部分行为，父类的改变都可能影响子类的行为；如果继承下来的子类不适合解决新问题，父类必须重写或替换，那么这种依赖关系就限制了灵活性，最终限制了复用性。<br>虚继承：为了解决多重继承中的二义性问题，它维护了一张虚基类表。</p>
+<h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><ol>
+<li><p>多态是指同一操作作用于不同的对象，可以产生不同的解释和不同的执行结果。  </p>
+</li>
+<li><p>多态分为编译时多态和运行时多态。</p>
+<p>编译时多态：函数重载和运算符重载。即在同一个作用域中，函数名相同但参数不同的函数称为重载函数。运算符重载是指可以重新定义运算符的操作数类型和操作数个数。编译时多态的函数调用机制是编译器在编译时就确定了调用哪个函数，所以他是静态的。</p>
+<p>运行时多态：虚函数和纯虚函数。即在基类中存在虚函数（一般为纯虚函数）子类通过重载这些接口，使用基类的指针或者引用指向子类的对象，就可以调用子类对应的函数，动多态的函数调用机制是执行期才能确定的，所以他是动态的。</p>
+</li>
+</ol>
+<p>优点：大大提高了代码的可复用性；提高了了代码的可维护性，可扩充性。<br>缺点：易读性比较不好，调试比较困难。模板只能定义在头文件中，当工程大了之后，编译时间十分的变态。</p>
+<h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><ol>
+<li><p>隐藏类的属性和实现细节，仅对外提供接口。</p>
+</li>
+<li><p>封装性实际上是由编译器去识别关键字public、private和protected来实现的，体现在类的成员可以有公有成员(public)，私有成员(private)，保护成员(protected)。</p>
+<p>私有成员是在封装体内被隐藏的部分，只有类体内说明的函数(类的成员函数)才可以访问私有成员，而在类体外的函数时不能访问的。</p>
+<p>公有成员是封装体与外界的一个接口，类体外的函数可以访问公有成员。</p>
+<p>保护成员是只有该类的成员函数和该类的派生类才可以访问的。</p>
+</li>
+</ol>
+<p>优点：隔离变化；便于使用；提高重用性；提高安全性。</p>
+<p>缺点：如果封装太多，影响效率；使用者不能知道代码具体实现。</p>
+<h2 id="C-的垃圾回收机制"><a href="#C-的垃圾回收机制" class="headerlink" title="C++的垃圾回收机制"></a>C++的垃圾回收机制</h2><p>C语言本身没有提供GC机制，而C++ 0x则提供了基于引用计数算法的智能指针进行内存管理。</p>
+<h3 id="引用计数"><a href="#引用计数" class="headerlink" title="引用计数"></a>引用计数</h3><p>基本思路是为每个对象加一个计数器，计数器记录的是所有指向该对象的引用数量。每次有一个新的引用指向这个对象时，计数器加一；反之，如果指向该对象的引用被置空或指向其它对象，则计数器减一。当计数器的值为0时，则自动删除这个对象。</p>
+<p>缺点：有循环引用问题；多个线程同时对引用计数进行增减时，引用计数的值可能会产生不一致的问题。</p>
+<h3 id="标记清除"><a href="#标记清除" class="headerlink" title="标记清除"></a>标记清除</h3><p><code>Mark&amp;Sweep</code>垃圾收集器由标记阶段和回收阶段组成，标记阶段标记出根节点所有可达的对节点，清除阶段释放每个未被标记的已分配块。典型地，块头部中空闲的低位中的一位用来表示这个块是否已经被标记了。通过Mark&amp;Sweep算法动态申请内存时，先按需分配内存，当内存不足以分配时，从寄存器或者程序栈上的引用出发，遍历上述的有向可达图并作标记（标记阶段），然后再遍历一次内存空间，把所有没有标记的对象释放（清除阶段）。因此在收集垃圾时需要中断正常程序，在程序涉及内存大、对象多的时候中断过程可能有点长。当然，收集器也可以作为一个独立线程不断地定时更新可达图和回收垃圾。</p>
+<p>缺点：该算法不像引用计数可对内存进行即时回收；在分配大量对象时，且对象大都需要回收时，回收中断过程可能消耗很大。</p>
+<p>优点：解决了引用计数的循环引用问题。</p>
+<h3 id="节点复制"><a href="#节点复制" class="headerlink" title="节点复制"></a>节点复制</h3><p>从根节点开始，被引用的对象都会被复制到一个新的存储区域中，而剩下的对象则是不再被引用的，即为垃圾，留在原来的存储区域。释放内存时，直接把原来的存储区域释放掉，继续维护新的存储区域即可。</p>
+<p>缺点：需要两倍的内存空间；复制的过程会消耗大量的时间。</p>
+<p>优点：当需要回收的对象越多时，它的开销很小。</p>
+<h3 id="分代收集"><a href="#分代收集" class="headerlink" title="分代收集"></a>分代收集</h3><p>程序中存在大量的这样的对象，它们被分配出来之后很快就会被释放，但如果一个对象分配后相当长的一段时间内都没有被回收，那么极有可能它的生命周期很长，尝试收集它是无用功。为了让GC变得更高效，我们应该对刚诞生不久的对象进行重点扫描，这样就可以回收大部分的垃圾。</p>
+<p>为了达到这个目的，我们需要依据对象的”年龄“进行分代，刚刚生成不久的对象划分为新生代，而存在时间长的对象划分为老生代，根据实现方式的不同，可以划分为多个代。<br>首先从根开始进行一次常规扫描，扫描过程中如果遇到老生代对象则不进行递归扫描，这样可大大减少扫描次数。这个过程可使用标记清除算法或者复制收集算法。然后，把扫描后残留下来的对象划分到老生代，若是采用标记清除算法，则应该在对象上设置某个标志位标志其年龄；若是采用复制收集，则只需要把新的存储区域内对象设置为老生代就可以了。</p>
+<h3 id="malloc使用的垃圾回收机制"><a href="#malloc使用的垃圾回收机制" class="headerlink" title="malloc使用的垃圾回收机制"></a>malloc使用的垃圾回收机制</h3><p>当应用程序使用malloc试图从堆上获得内存块时，通常都是以常规方式来调用malloc，而当malloc找不到合适空闲块的时候，它就会去调用垃圾收集器，以回收垃圾到空闲链表。此时，垃圾收集器将识别出垃圾块，并通过free函数将它们返回给堆。这样看来，垃圾收集器代替我们调用了free函数，从而让我们显式分配，而无须显式释放。</p>
+<p>垃圾收集器为一个保守的垃圾收集器。保守的定义是：每个可达的块都能够正确地被标记为可达，而一些不可达块却可能被错误地标记为可达。其根本原因在于C&#x2F;C++语言不会用任何类型信息来标记存储器的位置，即对于一个整数类型来说，语言本身没有一种显式的方法来判断它是一个整数还是一个指针。因此，如果某个整数值所代表的地址恰好的某个不可达块中某个字的地址，那么这个不可达块就会被标记为可达。所以，C&#x2F;C++所实现的垃圾收集器都不是精确的，存在着回收不干净的现象。而像Java的垃圾收集器则是精确回收。</p>
+<h2 id="C-中的指针和引用"><a href="#C-中的指针和引用" class="headerlink" title="C++中的指针和引用"></a>C++中的指针和引用</h2><p><strong>C++中的对象</strong>：对象是指一块能存储数据并具有某种类型的内存空间。一个对象a，它有值和地址&amp;a，运行程序时，计算机会为该对象分配存储空间，来存储该对象的值，我们通过该对象的地址，来访问存储空间中的值。<br><strong>指针</strong>：指针p也是对象，它同样有地址&amp;p和存储的值p，只不过，p存储的数据类型是数据的地址。如果我们要以p中存储的数据为地址，来访问对象的值，则要在p前加解引用操作符”<em>“,即</em>p。<br><strong>引用</strong>：引用理解成变量的别名。定义一个引用的时候，程序把该引用和它的初始值绑定在一起，而不是拷贝它。计算机必须在声明r的同时就要对它初始化，并且，r一经声明，就不可以再和其它对象绑定在一起了。</p>
+<p>使用指针的情况：</p>
+<ol>
+<li>如果你有一个变量，目的是指向另一个变量，但是也有可能它不指向任何对象的时候。</li>
+<li>如果你有一个变量，目的是在不同的时间指向不同对象的时候。</li>
+</ol>
+<p>使用引用的情况:</p>
+<ol>
+<li>如果这个变量总是必须代表一个对象，该变量不能为null。</li>
+<li>如果这个变量总是代表一个对象，并且一旦代表了这个对象就不会改变。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yzsjy.github.io/2023/05/23/C-STL/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -434,7 +560,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -480,7 +606,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2025</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
